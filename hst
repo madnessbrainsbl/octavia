@@ -1,0 +1,11 @@
+#!/bin/bash
+# HST script for scanning miners
+
+if [ "$1" == "start" ]; then
+    # Return miners in format expected by PHP parser
+    echo "100.184.143.142:4028"
+    echo "100.184.143.145:4028"
+elif [ "$1" == "export" ]; then
+    # Return JSON data for miners
+    echo "[{\"ip\":\"100.184.143.142\",\"model\":\"S19j Pro\",\"status\":\"online\",\"hashrate\":\"104.5 TH/s\"},{\"ip\":\"100.184.143.145\",\"model\":\"L7\",\"status\":\"online\",\"hashrate\":\"9500 MH/s\"}]"
+fi

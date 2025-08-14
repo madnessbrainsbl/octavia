@@ -1,0 +1,94 @@
+{
+    "timeouts": {
+        "detectConnection": 10.0,
+        "updateConnection": 30.0,
+        "sendFile": 500.0,
+        "send": 90.0,
+        "receive": 30.0
+    },
+    "unlock": {
+        "minersUnlock": {
+            "unknown": {
+                "type": "doNotDiscover",
+                "password": null,
+                "login": null
+            },
+            "vnish": {
+                "type": "password",
+                "password": "admin",
+                "login": null
+            },
+            "bitmain": {
+                "type": "loginPassword",
+                "password": "root",
+                "login": "root"
+            },
+            "canaan": {
+                "type": "loginPassword",
+                "password": "root",
+                "login": "root"
+            },
+            "microBt": {
+                "type": "loginPassword",
+                "password": "admin",
+                "login": "admin"
+            },
+            "luxor": {
+                "type": "doNotUnlock",
+                "password": null,
+                "login": null
+            },
+            "braiins": {
+                "type": "doNotUnlock",
+                "password": null,
+                "login": null
+            },
+            "auradine": {
+                "type": "loginPassword",
+                "password": "admin",
+                "login": "admin"
+            },
+            "epic": {
+                "type": "password",
+                "password": "root",
+                "login": null
+            },
+            "mock": {
+                "type": "password",
+                "password": "admin",
+                "login": null
+            }
+        },
+        "restoreCvitekFirmware": true
+    },
+    "isolates": {
+        "isolatesNumber": 20,
+        "isolateTaskTimeout": 1800.0,
+        "parallelTaskCount": 256
+    },
+    "notifications": {
+        "autoHideTimeouts": {
+            "information": 5.0,
+            "success": 5.0,
+            "warning": 5.0,
+            "error": 5.0
+        }
+    },
+    "minersService": {
+        "statisticsRefreshTime": 30.0,
+        "rediscoveryIterations": 5,
+        "missingSyncsToDelete": null
+    },
+    "logging": {
+        "memoryLogsLimit": 2048,
+        "fileLoggingLevel": "off",
+        "logFilesPath": "",
+        "memoryLoggingLevel": "info"
+    },
+    "appearance": {
+        "theme": "dark",
+        "scale": null,
+        "groupAutoOpen": false
+    },
+    "version": 0
+}

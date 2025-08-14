@@ -1,0 +1,126 @@
+#!/bin/bash
+# Mock hst script for testing
+
+if [ "$1" == "export" ]; then
+    cat <<'EOF'
+[
+    {
+        "type": "vnish",
+        "ip": {
+            "ipCode": 3232261263,
+            "address": "192.168.100.143",
+            "port": null
+        },
+        "minerStatus": "mining",
+        "mac": "02:27:C7:C5:B0:FA",
+        "model": "Antminer L9",
+        "platform": "aml",
+        "firmware": {
+            "version": "1.2.6-rc5",
+            "name": "octavacool"
+        },
+        "power": 3266,
+        "chipTemp": {
+            "max": 68,
+            "min": 53
+        },
+        "hashrate": {
+            "hashrate": 16.583328,
+            "unit": "GH/s"
+        },
+        "cooling": {
+            "fans": [
+                {"rpm": 0, "isOk": true},
+                {"rpm": 0, "isOk": true},
+                {"rpm": 0, "isOk": true},
+                {"rpm": 0, "isOk": true}
+            ],
+            "coolingMode": "immers"
+        },
+        "pools": [
+            {
+                "url": "litecoinpool.org:3333",
+                "worker": "Erkhov.1",
+                "password": ""
+            }
+        ],
+        "devFeePercent": 2.997,
+        "uptime": 354006000000
+    },
+    {
+        "type": "vnish",
+        "ip": {
+            "address": "192.168.100.142"
+        },
+        "minerStatus": "mining",
+        "mac": "02:B7:D1:80:9B:73",
+        "model": "Antminer L9",
+        "platform": "aml",
+        "firmware": {
+            "version": "1.2.6-rc5",
+            "name": "octavacool"
+        },
+        "power": 3494,
+        "chipTemp": {
+            "max": 65
+        },
+        "hashrate": {
+            "hashrate": 17.270045,
+            "unit": "GH/s"
+        },
+        "cooling": {
+            "fans": [
+                {"rpm": 2100, "isOk": true},
+                {"rpm": 2070, "isOk": true},
+                {"rpm": 0, "isOk": false},
+                {"rpm": 0, "isOk": false}
+            ],
+            "coolingMode": "auto"
+        },
+        "pools": [
+            {
+                "url": "litecoinpool.org:3333",
+                "worker": "panov.18"
+            }
+        ],
+        "devFeePercent": 2.995,
+        "uptime": 393459000000
+    },
+    {
+        "type": "bitmain",
+        "ip": {
+            "address": "192.168.100.5"
+        },
+        "minerStatus": "failure",
+        "mac": "02:81:EF:09:D1:2C",
+        "model": "Antminer L9#Stock",
+        "platform": "aml",
+        "firmware": {
+            "version": "Wed AML 21 19:20:02 CST 2024",
+            "name": null
+        },
+        "power": null,
+        "chipTemp": {
+            "max": 72
+        },
+        "hashrate": {
+            "hashrate": 19.143,
+            "unit": "GH/s"
+        },
+        "cooling": {
+            "fans": [
+                {"rpm": 2139, "isOk": true},
+                {"rpm": 2139, "isOk": true}
+            ]
+        },
+        "pools": [
+            {
+                "url": "litecoinpool.org:3333",
+                "worker": "panov.8"
+            }
+        ],
+        "uptime": 393535000000
+    }
+]
+EOF
+fi
